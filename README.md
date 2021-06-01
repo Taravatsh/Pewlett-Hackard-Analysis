@@ -18,14 +18,15 @@ This section of the report focuses on the aforementioned technical analysis resu
 ### Number of Retiring Employees by Title
 
 In this section of the project, retirement title table was created initially holding the titles of current employees at Pewlett Hackard who were born between January 1, 1952 and December 31, 1955. Since some employees had multiple titles in the database due to promotion, **DISTINCT ON** statement was then used for creating a table containing only the most recent titles of the employees as depicted in the figure below.
+
 <br>
 ![Unique Titles Table](Resources/Unique_titles_table.png)
 
 After achieveing the unique titles table, **COUNT()** function was used for creating the final table that had the number of retirement ready employees by their most recent job title as demonstrated in the figure below.
-
+<br>
 <div align="center">
 
-![Retiring Titles Table](Resources/Retiring_titles_table.png)
+![Retiring Titles Table](Resources/Retiring_title_table.png)
 </div>
 
 Looking at the figure illustarted above, the following results can be observed:
@@ -56,17 +57,19 @@ Pewlett Hackard should be prepared for the coming "silver tsunami" as the baby b
 Table displayed below demonstrates the number of roles that are required to be filled per department as the "silver tsunami" begins to make an impact. As it can be seen a total of **90,398** roles are required to get filled as soon as the employees retire, in which bulk of retiring employees are from the Development and Production departments. 
 
 As a result of this, Pewlett Hackard will be having significantly large number of vacancies soon and this requires a lot of effort to get enough work force on time and fill those roles again. Hence, it is recommended that Pewlett Hackard restructure the company departments or transfer some of the roles to the existing staff to overcome the challenge of looking for employees and not requiring as many employees to continue their operation and not facing a down time.
+<br>
 
 <div align="center">
 
-![Roles to be filled per Department](Resources/Roles_to_filled_per_dept_table.png)
+![Roles to be filled per Department](Resources/Roles_to_be_filled_table.png)
 </div>
 
 ### Retirement-ready Mentors
 
 Table below depicts the retirement-ready employees by department who are eligible to mentor the next generation of Pewlett Hackard. As it is evident from the table, total of **1,549** qualified retirement-ready employees exist in the departments. Hence, there would not be enough number of qualified mentors for the next generation of Pewlett Hackard employees as they are very few comparing to the number of employees who are retiring. However, if Pewlett Hackard attempts to reduce the number of employees needed in the future and fills less percentage of vacanies then this would increase the chance of having enough mentors for the future generation of employees.
+<br>
 
 <div align="center">
 
-![Retirement Ready Employees to Mentor](Resources/Retirement_ready_mentors_per_dept_table.png)
+![Retirement Ready Employees to Mentor](Resources/Retirement_ready_mentors_table.png)
 </div>
