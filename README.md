@@ -18,8 +18,8 @@ This section of the report focuses on the aforementioned technical analysis resu
 ### Number of Retiring Employees by Title
 
 In this section of the project, retirement title table was created initially holding the titles of current employees at Pewlett Hackard who were born between January 1, 1952 and December 31, 1955. Since some employees had multiple titles in the database due to promotion, **DISTINCT ON** statement was then used for creating a table containing only the most recent titles of the employees as depicted in the figure below.
-
 <br>
+
 ![Unique Titles Table](Resources/Unique_titles_table.png)
 
 After achieveing the unique titles table, **COUNT()** function was used for creating the final table that had the number of retirement ready employees by their most recent job title as demonstrated in the figure below.
