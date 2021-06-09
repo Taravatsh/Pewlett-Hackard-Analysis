@@ -1,4 +1,4 @@
--- Creating Departments Table
+-- Create Departments Table
 CREATE TABLE departments (
 	dept_no VARCHAR(4) NOT NULL,
 	dept_name VARCHAR NOT NULL,
@@ -6,7 +6,7 @@ CREATE TABLE departments (
 	UNIQUE (dept_name)
 );
 
--- Creating Employees Table 
+-- Create Employees Table 
 CREATE TABLE employees (
 	emp_no INT NOT NULL,
 	birth_date DATE NOT NULL,
@@ -17,7 +17,7 @@ CREATE TABLE employees (
 	PRIMARY KEY (emp_no)
 );
 
--- Creating Titles Table 
+-- Create Titles Table 
 CREATE TABLE titles (
 	emp_no INT NOT NULL,
 	title VARCHAR(50) NOT NULL,
@@ -27,7 +27,7 @@ CREATE TABLE titles (
 	PRIMARY KEY (emp_no, title, from_date)
 );
 
--- Creating Department Employee Table
+-- Create Department Employee Table
 CREATE TABLE dept_emp (
 	emp_no INT NOT NULL,
 	dept_no VARCHAR(4) NOT NULL,
@@ -40,8 +40,7 @@ CREATE TABLE dept_emp (
 
 -- Deliverable 1: The Number of Retiring Employees by Title.
 
--- Creating a Retirement Titles table that holds all the titles
--- of current employees who were born between January 1, 1952 and December 31, 1955.
+-- Retrieve the required columns from the employees and titles table.
 SELECT em.emp_no,
 	em.first_name,
 	em.last_name,
@@ -64,7 +63,7 @@ INTO unique_titles
 FROM retirement_titles 
 ORDER BY emp_no ASC, to_date DESC;
 
--- Retrieving the number of employees by their most recent title.
+-- Retrieve the number of employees by their most recent title.
 SELECT COUNT(emp_no), title
 INTO retiring_titles
 FROM unique_titles
@@ -73,8 +72,6 @@ ORDER BY COUNT(emp_no) DESC;
 
 -- Deliverable 2: The Employees Eligible for the Mentorship Program.
 
--- Creating a Mentorship Eligibility table that holds the employees
--- who are eligible to participate in a mentorship program.
 SELECT DISTINCT ON (em.emp_no) em.emp_no,
 	em.first_name,
 	em.last_name,
