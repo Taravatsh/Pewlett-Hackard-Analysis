@@ -6,7 +6,7 @@ In this project, Pewlett Hackard which is a large company that has been boasting
 
 ### Purpose
 
-The purpose of this project is to assist Bobby, who is an up and coming HR analyst of Pewlett Hackard, to complete building an employee database so that Pewlett Hackard is prepared for "silver tsunami" as many current employees are reaching retirement age. Therefore, using SQL queries, knowledge of data modeling, engineering and analytical skills two technical analysis are required to be carried out for completing the employee database of Pewlett Hackard. These two technical analysis are as follows:
+The purpose of this project is to assist Bobby, who is an up and coming HR analyst of Pewlett Hackard, to complete building an employee database so that Pewlett Hackard is prepared for "silver tsunami" as many current employees are reaching retirement age. Therefore, using SQL queries, knowledge of data modeling, engineering and analytical skills, two technical analysis are required to be carried out for completing the employee database of Pewlett Hackard. These two technical analysis are as follows:
 
 - Determining the number of retiring employees per title.
 - Identifying employees who are eligible to participate for the mentorship program.
